@@ -1,17 +1,60 @@
-<!---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="style.css">
 
-### Create a web page with the following characteristics:
+</head>
+<body>
+    <h1>Box model</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, vel, tempore aliquid minus omnis facere porro voluptatum temporibus totam aspernatur, id accusamus sapiente dignissimos beatae reiciendis quam. Esse, error illum?</p>
+    
+    <img src="https://images.nightcafe.studio/jobs/wzg8gdSvkdY4LdyEtyYI/wzg8gdSvkdY4LdyEtyYI_7.8125x.jpg?tr=w-1600,c-at_max" alt="error">
 
-1. Heading element(h1) should be at the top of the page.
-2. After the heading, there should be a paragraph.
-3. After the paragraph add an image having all the corner rounded.
-4. Below the image, there should be a circle with red background.
-5. At the bottom of the page, there must be a footer containing few links.
-6. The H1 has 1px red solid borders, background color #D18C1D, and 10px of space between the content and the border (padding)
-7. The paragraph is contained in 600px by 400px boxes with 2px black dotted borders and background color #D1D631
-8. Links have a 3px blue dashed border on the bottom only and background color #A1A1A1
+<div class="circle"> </div>
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
+<footer>  <a href="https://www.google.com">facebook</a>
+    <a href="https://www.google.com">Instagram</a>
 
---->
+
+</footer>
+
+</body>
+</html>
+
+#style.css
+
+
+h1{display: inline;
+    border: 1px solid ;
+    background-color: #D18C1D;
+    padding: 10px;}
+
+p{background-color: #d1d631;
+    width: 600px;
+    height: 400px;
+    border: 2px dotted black;}
+
+
+
+
+
+img{width: 400px;
+    height: 250px;
+
+    border-radius:50px ;}
+
+.circle{background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+margin: 50px;
+}
+footer{background-color: #A1A1A1;
+    border: 3px dashed;
+
+}
+
