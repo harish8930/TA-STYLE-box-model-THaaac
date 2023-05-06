@@ -1,141 +1,177 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment3</title>
+    <title>assignment</title>
     <link rel="stylesheet" href="style.css">
-</head>  
+</head>
 <body>
-    <header><h1> The box model,box sizing & box shadow</h1>
-    </header>
-    <hr>
-    <main><section>
-<h2>Exercise1 </h2>
-<div class="box"></div>
-<div>
-    <div class="marker-container"></div>
-    <span class="circle content"> </span>
-    <span>content</span>
-    <span class="circle padding"> </span>
-    <span>padding</span>
-    <span class="circle border"> </span>
-    <span>border</span>
-    <span class="circle margin"> </span>
-    <span>margin</span>
-</div>
-    </section>
-
-    <hr>
-    
+  <h1>The box model, Box-sizing & Box shadow</h1>
+  <div class="parent">
+    <h2>Exercise1</h2>
+    <div class="box"></div>
+  </div>
+<hr>
+<div class="exercise2">
 <h2>Exercise2</h2>
-<p>No border on these boxes</p>
-<div class="container">
-    <div class="child-box"></div>
-    <div class="child-box"></div>
-    <div class="child-box"></div>
-    </div>
-    
-<hr>
-<p> No border on these boxes</p>
-<div class="container">
-    <div class="child-box border"></div>
-    <div class="child-box border"></div>
-    <div class="child-box border"></div>
-    </div>
-<hr>
-<p> 1px border on these boxes but they are in the same line</p>
-<div class="container">
-    <div class="child-box border border-box"></div>
-    <div class="child-box border border-box"></div>
-    <div class="child-box border border-box"></div>
-    </div>
+<p>no border on these boxes</p></div>
 
-    </section>
+<div class="container">
+<div class="child1"></div>
+<div class="child2"></div>
+<div class="child3"></div>
+</div>
 
-    </main>
+<p>1px border on these boxes.</p>
+<div class="container1">
+  <div class="child11"></div>
+  <div class="child12"></div>
+  <div class="child13"></div>
+  </div>
 
-    
+  <p>1px border on these boxes but they are in same line</p>
+ <div class="container2">
+  <div class="child21"></div>
+  <div class="child22"></div>
+  <div class="child23"></div>
+  </div>
+
+
 </body>
 </html>
 
+
 style.css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-
-body{
-    line-height: 1.5;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-hr{width: 500px;
-    border-style: dashed;
-    margin: 32px auto;
-    
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-h1{
-    text-align: center;
-    font-size: 62px;
-    padding: 32px 180px;
+body {
+	line-height: 1;
 }
-h2{
-    font-size:40px;
-    text-align: center;
+ol, ul {
+	list-style: none;
 }
-
-section{ text-align: center;
+blockquote, q {
+	quotes: none;
 }
-
-.box{width: 200px;
-    height: 200px;
-    background-color: greenyellow;
-    display: inline-block;
-    border: 20px solid #add8e6;
-    outline: 10px solid black;
-    box-shadow: 0 0 0 30px  pink;
-
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-.circle{width: 20px;
-    height: 20px;
-    background-color: greenyellow;
-    display: inline-block;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 12px;
-
-}
-.marker-container{text-align: center;
-    margin-top: 60px;
-}
-.padding{ background-color: #add8e6;
-    
-}
-.border{background-color: black;}
-
-.margin{background-color: pink;}
-p{
-    text-align: center;
-    font-size: 40px;
-}
-.container{
-    width: 600px;
-    border: 1px solid grey;
-    margin: 0 auto;
-    font-size: 0;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.child-box{width: 180px;
-    height: 100px;
-    margin: 10px;
-    background-color: grey;
-    display: inline-block;
+h1{font-size: 30px;
+text-align: center;
+margin-top: 40px;
 }
-.border{ border: 1px solid black;
+h2{margin-top: 60px;
+font-size: 22px;
+margin-bottom: 40px;
+font-weight: 700;
 }
-.border-box{
-     box-sizing: border-box ;
+
+
+.parent{text-align: center;}
+.box{width: 100px;
+height: 100px;
+background-color: rgb(164, 255, 225);
+margin: 0 auto;
+border: 10px solid aqua;
+outline: 2px solid black;
+box-shadow: 0 0 0 16px rgb(233, 88, 113);
 }
+hr{width: 400px;
+margin-top: 60px;
+}
+.exercise2{text-align: center;
+margin-bottom: 30px;
+
+}
+.container{font-size: 0;
+	width: 600px;
+border: 1px solid black;
+margin: 0 auto;
+}
+
+
+.child1,.child2,.child3{width: 180px;
+height: 100px;
+margin: 10px;
+background-color: grey;
+box-sizing: border-box;
+display: inline-block;}
+
+.container1{width: 600px;     
+border: 1px solid black;
+margin: 0 auto;
+}
+
+
+.child11,.child12,.child13{width: 180px;
+	height: 100px;
+	margin: 10px;
+	background-color: grey;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+p{text-align: center;
+	margin-top: 20px;
+margin-bottom: 40px;
+font-weight: 800;
+}
+
+.container2{width: 600px;
+border: 1px solid black;
+margin: 0 auto;
+font-size: 0;
+}
+.child21,.child22,.child23{ width: 180px;
+	height: 100px;
+	margin: 10px;
+	background-color: grey;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid black;
+box-sizing: border-box;
+}
+
+
+
 
 
 
