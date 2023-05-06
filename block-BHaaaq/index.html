@@ -1,113 +1,142 @@
+index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>assignment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Exercise</h1>
+    <h1><strong>Exercise1</strong></h1>
+   <div class="box1"></div>
 
-<div class="box1"></div>
+   <div class="parent">
+    <div class="box2"></div>
+    <div class="box3"></div>
+   </div>
 
-
-<span class="parent">
-    
-</span>
-<span class="child"></span>
-
-<div class="box2">
-
-
-    <span class="parent1">
-    
-    </span>
-    <span class="child2"></span>
+<div class="father">
+<div class="box4"></div>
+<div class="box5"></div>
 </div>
 
-<div class="container">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsa, consequatur, inventore laboriosam sunt dignissimos at ipsam similique temporibus ut quisquam necessitatibus molestias illum sapiente dolorum id asperiores accusamus vel.
-</p></div>
-
-
-
-
-
+<div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus fugit, non doloremque nam sequi labore assumenda exercitationem, omnis ipsum et cum. In quis iste non totam ipsum consequatur laudantium qui, cumque magnam molestias similique magni, necessitatibus suscipit nulla dicta! Nam debitis asperiores dolore eius voluptatum beatae omnis obcaecati iusto delectus, inventore doloremque porro odio libero illo quam ut quia praesentium saepe ratione officiis unde id aspernatur ab? Sint sed labore odio, nemo incidunt !nam sequi labore assumenda exercitationem, omnis ipsum et cum. In quis iste non totam ipsum consequatur laudantium qui, cumque magnam molestias similique magni, necessitatibus suscipit nulla dicta! Nam debitis asperiores dolore eius voluptatum beatae omnis obcaecati iusto delectus, inventore doloremque porro odio libero illo quam ut quia praesentium saepe ratione officiis unde id aspernatur ab? Sint sed labore odio, nemo incidunt !
+    </div>
 </body>
 </html>
 
-
 style.css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{padding-left: 50px;}
+
+h1{margin: 20px;
+font-size: 20px;
+font-weight: 600;
+
+}
 .box1{width: 100px;
-    height: 70px;
-    background-color: brown;
-    border: 2px solid black;
-    margin: 5px;
-
-}
-
-.parent{display: inline-block;
-     width: 100px;
-height: 70px;
+height: 100px;
 background-color: brown;
-font-size: 0px;
-margin: 5px;
-margin-top: 5px;
 border: 1px solid black;
-outline: auto;
+margin: 20px;
 }
 
-.container{font-size: 20px;
+.parent, .box2, .box3{display: inline-block;
+    width: 100%;
 
 }
-.child{display: inline-block;
-    width: 100px;
-height: 70px;
-background-color: brown;
-font-size: 0px;
-margin: 5px;
-margin-top: 5px;
-margin-left: 5px;
-border: 2px dashed black
 
-}
-.parent1{display: inline-block;
-    width: 100px;
-height: 70px;
-background-color: brown;
-font-size: 0px;
-margin: 5px;
-margin-top: 5px;
-margin-left: 5px;
-    border: 2px dotted black;
-}
-.child2{display: inline-block;
-    width: 100px;
-height: 70px;
-background-color: brown;
-font-size: 0px;
-margin: 5px;
-margin-top: 5px;
-margin-left: 5px; }
 
-.container{background-color: orangered;
-    font-size: 20px;
-    width: 200px;
-    height: 300px;
-    padding-top:  5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    border-top: 15px solid blue;
-    border-right: 15px solid grey;
-    border-bottom: 15px solid yellow;
-    border-left: 15px solid green;
-    color: white;
+.box2{width: 100px;
+    height: 100px;
+    background-color: brown;
+    border: 4px double black;
+    margin: 20px;
     
 }
+.box3{width: 100px;
+    height: 100px;
+    background-color: brown;
+border: 2px dashed black;
+margin: 20px;
+}
 
+.father,.box4,.box5{display: inline-block; }
+
+
+.box4{width: 100px;
+    height: 100px;
+    background-color: brown;
+border: 2px dotted black;
+margin: 20px;}
+
+.box5{width: 100px;
+    height: 100px;
+    background-color: brown;
+margin: 20px;}
+
+.para{background-color: rgb(255, 72, 0);
+font-size: 16px;
+color: white;
+width: 300px;
+padding: 20px 20px 20px 20px;
+border-top: 20px solid blue;
+border-right: 20px solid grey;
+border-bottom: 20px solid yellow;
+border-left: 20px solid green;
+outline: 20px solid blueviolet;
+margin-top: 40px;
+margin-bottom: 40px;
+}
 
 
 
